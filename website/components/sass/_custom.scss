@@ -1,0 +1,141 @@
+#overlay {
+     visibility: hidden;
+     // display: none;
+     // opacity: 0;
+     position: fixed;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:left;
+     z-index: 999;
+     background-color: rgba(0,0,0,0.7);
+     // background-image:url(background-trans.png);
+
+}
+#overlay > .body-txt {
+
+     position: relative;
+     width:70%;
+     height: 60%;
+     text-align: left;
+     overflow: scroll;
+     margin: 100px auto 0px;
+     background-color: #fff;
+     border:1px solid #000;
+     padding:15px;
+     p {
+          line-height: 1.2em;
+          margin: 1em;
+     }
+     ul {
+          margin-left: 2em;
+          list-style: disc; 
+          li {
+               margin: 1em 0 1em;
+               list-style: disc;
+          }
+     } 
+
+}
+#mheader {
+    position: relative;
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    color: #fff;
+    // height: 30px;
+    width: 70%;
+    margin: 0 auto;
+    // left:0px;
+    // top:0px;
+    // width: 100%;
+}
+@media screen and (max-width: 460px) {
+  #overlay > .body-txt {
+    margin: 15px auto 0px;
+    width: 80%;
+    height: 50%;
+  }
+  #mheader {
+    width: 80%;
+  }
+}
+
+
+a.modal-print {
+     margin: 0px;
+     padding: 5px 10px;
+     line-height: 1.5em;
+     border: none;
+     display: inline;
+     background: rgba(0,0,0,0.1);
+     &:hover {
+      background: #313131;
+      color: #fff;
+     }
+
+}
+a.modal-close {
+     margin: 0px;
+     padding: 10px;
+     border: none;
+     display: inline;
+     z-index: 1000;
+
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    // right: -12px;
+    text-align: center;
+    // top: -10px;
+    right: 20px;
+    top: 5px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #000;
+}
+a.modal-close:hover {
+    background: #d0112b;
+}
+
+a.modal-close-btm {
+     margin: 0px 15px 0px;
+     padding: 10px;
+     border: none;
+     display: inline-block;
+     position: relative;
+     text-align: center;
+    text-decoration: none;
+}
+@media screen and (max-width: 460px) {
+     a.modal-close {
+           padding: 10px;
+          border-radius: 50%; 
+          box-sizing: content-box; 
+          // width: auto;
+          // line-height: normal;        
+     }
+}
+@media screen and (max-width: 550px) {
+     a.modal-close {
+          padding: 10px;
+          border-radius: 50%; 
+          box-sizing: default;
+     }
+     a.modal-close-btm {
+          margin: 15px auto;
+          display: block;
+
+     }
+#mheader {
+    padding: 2px 15px;
+    margin: 0px auto;
+}     
+}
+
+// body.modal-open {
+//     overflow: hidden;
+// }

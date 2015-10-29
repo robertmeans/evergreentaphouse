@@ -1,0 +1,51 @@
+a.back-to-top {
+	box-sizing: border-box;
+	display: none;
+	z-index: 1001;
+	position: fixed;
+	width: 50px;
+	height: 28px;
+	bottom: 0px;
+	right: 40px;
+	text-align: center;
+	background-color: rgba(45,45,45,.6);
+	padding: 10px 10px 25px 10px;
+	color: #fff;
+	text-decoration: none;
+	
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-top-left: 8px;
+	-moz-border-radius-top-right: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-bottom: none;
+
+	-webkit-box-shadow: -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
+	-moz-box-shadow:    -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
+	box-shadow:         -4px 4px 3px 0px rgba(50, 50, 50, 0.44);
+
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	transition: background-color .3s ease;	
+
+	-webkit-transition: height .2s ease;
+	-moz-transition: height .2s ease;
+	-o-transition: height .2s ease;
+	transition: height .2s ease;
+	
+	&:hover {
+		background-color: #505050;
+		color: #fff;
+		text-decoration: none;
+		height: 32px;
+		border-top: 1px solid #fff;
+		border-right: 1px solid #fff;
+		border-left: 1px solid #fff;
+	}
+}

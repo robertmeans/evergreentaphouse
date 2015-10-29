@@ -1,0 +1,99 @@
+@media screen and (max-width: 600px){
+
+#wrapper {
+	width: 100%;
+	padding: 0 0;
+}
+header h1 {
+	font-size: 2.6em;
+	padding: 15px;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #C54A14;
+	padding: 0px 10px;
+}
+#left-side {
+	width: 94%;
+	padding: 0px 3% 0px 3%;
+}
+#right-side {
+	width: 94%;
+	padding: 0px 3% 0px 3%;	
+	input {
+		width: 98%;
+		max-width: 98%;
+		padding-right: 0;
+		margin-right: 2%;
+		-webkit-appearance: none;
+	}
+}
+// holy ever-loving crapfire!
+// this is what mobile safari makes
+// you do (-webkit-appearance:) 
+// in order to style buttons...
+
+
+textarea {
+	width: 98%;
+	max-width: 98%;
+	margin-right: 2%;
+}
+input#send, input#clear {
+	display: inline-block;
+	float: left;
+	max-width: 100px;
+	padding: 10px;
+	line-height: 2em;
+	margin: 10px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border: 1px solid #233851;
+	background: #ccc;
+	color: #000;
+	&:hover {
+		background: #ccc;
+		color: #000;
+	}
+	// keep mobile ios from leaving a border
+	// after clicked...
+	&:active, &:focus {
+		outline: 0;
+		outline-style: 0;
+	}
+}
+// .no-touch is part of the custom-modernizr
+// linked to this project. you style the hover
+// and active states for anything that is NOT
+// a touch device here. styles above are for 
+// touch devices (seems counterintuitive).
+// modernizr adds a .no-touch class to anything
+// other than mobile devices. 
+.no-touch {
+	input#send, input#clear {
+		&:hover, &:active {
+			background: #565656;
+			color: #fff;
+		}
+	}
+}
+input#send {
+	margin-left: 0;
+}
+} // closing (max-width: 799px)
+
+
+@media screen and (max-width: 350px){
+#bg-div-one {
+	img {
+		left: -50%; 
+		right: -50%; 
+		min-width: 30%;
+		min-height: 30%;
+		max-width: 250px;
+		max-height: 250px;
+	}
+}
+} // closing (max-width: 350px)

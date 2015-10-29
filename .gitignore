@@ -1,0 +1,8 @@
+*config*
+*.sass-cache*
+_images-raw
+_admin-components
+_notes
+node_modules
+.gitattributes
+sftp-config.json

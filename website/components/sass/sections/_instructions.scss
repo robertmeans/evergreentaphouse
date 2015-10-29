@@ -1,0 +1,350 @@
+#instructions {
+	background: url(_images/rookies-tile-bkg-02.jpg) repeat fixed;
+}
+
+// ---------------------
+.instruction-wrap {
+	min-height: 800px;
+	width: 100%;
+	padding-bottom: 30px;
+	// img {
+	// 	display: block;
+	// 	box-sizing: border-box;
+	// 	width: 96%;
+	// 	max-width: 1100px;
+	// 	margin: 20px auto 0px auto;
+	// 	border: 1px solid #000;
+	// }
+	.flexslider {
+		margin: 20px auto;
+	}
+}
+.easy-as {
+	font-family: 'Courgette', sans-serif;
+	font-size: 1.7em; 
+	color: #212993;
+	display: block;
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+#easy-as {
+	box-sizing: border-box;
+	padding-top: 20px;
+	display: block;
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+a.ph {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	background: inherit;
+	display: inline;
+	text-decoration: none;
+}
+
+.add-resource {
+	box-sizing: border-box;
+	clear: both;	
+	display: block;
+	width: 80%;
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 30px 20px;
+	background: #fff;
+	border: 1px solid #313131;
+	h2 {
+		margin-left: 15px;
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+	img {
+		display: block;
+		float: left;
+		margin: 0px 15px 15px 0px;
+		padding: 0px;
+		// border: 1px solid #313131;
+		border: none;
+		box-shadow: -3px 3px 5px #aaa;
+		width: 100%;
+		max-width: 200px;
+	}
+}
+@media screen and (max-width: 470px) {
+	.add-resource {
+		img {
+			// float: none;
+			// clear: both;
+			// margin: 0px auto 10px;
+			max-width: 100px;
+		}
+	}
+}
+.ex-sp {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+p.full-width {
+	display: block;
+	padding: 20px 15px;
+}
+p.half {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+	padding: 25px;
+	float: left;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+
+
+.container {
+	// border-top: 1px solid #ccc;
+	// position: relative;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 2px auto;
+}
+
+.membership-level-full {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 20px;
+}
+p.full-text {
+	display: block;
+	width: 90%;
+	margin: 20px auto;
+}
+
+
+
+p.membership-level-left {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+	padding: 10px 20px 10px 20px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+p.membership-level-right {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 75%;
+	float: right;
+	padding: 10px 50px 10px 0px;
+	text-align: left;
+}
+@media screen and (max-width: 460px) {
+	p.membership-level-left {
+		display: block;
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	p.membership-level-right {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+		padding: 10px 10px 20px 10px;
+		border-bottom: 1px dashed #bababa;
+	}
+	p.membership-level-right.no-border {
+		border-bottom: none;
+	}
+}
+
+
+
+.h-bar {
+	display: block;
+	clear: both;
+	margin: 30px auto;
+	padding-top: 30px;
+	width: 85%;
+	height: 10px;
+	border-bottom: 4px double #c5c5c5;
+}
+.add-resource > .h-bar {
+	display: block;
+	clear: both;
+	margin: 10px auto 25px auto;
+	padding: 0px;
+	width: 85%;
+	height: 10px;
+	border-bottom: 1px solid #c5c5c5;	
+}
+
+div.expand {
+	box-sizing: border-box;
+	width: 100%;
+    color: #757575;
+    border-bottom: 1px solid #838383;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+    background-color: #fff;
+
+
+	// *********************************************
+
+	display: none;
+
+    // display: block;
+
+
+	// just for development
+	// change back to none when done
+
+
+
+    // position: relative;
+    float: left;
+    clear: both;
+    margin-bottom: 0px;
+    // padding: 0px 15px 20px 15px;
+    a.join-now-btn {
+    	display: block;
+    	// position: relative;
+    	float: none;
+    	clear: both;
+    	width: 186px;
+    	height: auto;
+    	text-align: center;
+    	padding: 30px 20px;
+    	margin: 50px auto;
+    	// left: -110px;
+    	line-height: 1em;
+    	color: #fff;
+    	text-decoration: none;
+    	background: #d0112b;
+    	border: 1px solid #8b091b;
+    	font-size: 1.8em;
+    	&:hover {
+    		background: #62b838;
+    	}
+    }
+    h2 {
+    	display: block;
+		margin: 30px 15px 30px 30px;
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+}
+
+
+
+a.click {
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin-top: 0px;
+	padding: 15px 0px;
+	z-index: 10;
+	background: #757575;
+	border: 1px solid #bebebe;
+	color: #fff;
+	line-height: 1em;
+	text-decoration: none;
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	-ms-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+	&:hover {
+		background: #e0e0e0;
+		color: #757575;
+		text-decoration: none;
+	}
+	&:active, &:focus {
+		outline: 0;
+		outline-style: 0;
+		// mobile ios - this is what you have
+		// to do to turn off outline
+	}
+	&::before {
+		content: "\00a0\00a0\00a0\00a0";
+	}
+}
+
+#easy-as i.fa {
+	float: right;
+	margin-right: 5%;
+}
+html.touch a.click {
+	&:hover {
+		background: #757575;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.easy-as {
+		padding-top: 50px;
+	}
+	#easy-as {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.easy-as {
+		font-size: 1.4em; 
+		width: 95%;
+		padding-top: 50px;
+	}	
+	#easy-as {
+		width: 98%;
+		padding-top: 20px;
+	}
+	.add-resource {
+		width: 98%;
+	}	
+}
+
+@media screen and (max-width: 745px) {
+	p.half {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.easy-as {
+		padding-top: 20px;
+	}
+	a.click {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	a.click {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		padding: 15px;
+		&::before {
+			content: "";
+		}
+	}
+	#easy-as i.fa {
+		float: none;
+		display: block;
+		width: 2em;
+		text-align: center;
+		margin: 10px auto;
+	}
+}
