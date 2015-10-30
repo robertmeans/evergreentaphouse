@@ -2,9 +2,16 @@ body {
 	font-size: 16px;
 	color: #757575;
 	font-family: Calibri, Tahoma, Arial;
+	background: url(_images/skulls.png) fixed repeat;
 }
 h1, h2, h3, h4, h5 {
 	display: block;
+}
+h1 {
+	color: #44251c;
+}
+h2 {
+	color: #9e8c4a;
 }
 p {
 	display: block;
@@ -21,5 +28,5 @@ p {
 }
 #wrapper img {
 	width: 100%;
-	max-width: 230px;
+	max-width: 180px;
 }

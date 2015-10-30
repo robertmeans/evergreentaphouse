@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		      style: 'expanded',
 		    },
 		    files: {
-		      '_css/under-construction-styles-expanded.css': 'components/sass/under-construction-styles.scss'
+		      'styles-expanded.css': 'components/sass/under-construction-styles.scss'
 		    }
 		  },
 		  dist: {
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 		  		style: 'compressed',
 		  	},
 		  	files: {
-		  		'_css/under-construction-styles.css': 'components/sass/under-construction-styles.scss'
+		  		'styles.css': 'components/sass/under-construction-styles.scss'
 		  	}
 		  }
 		},

@@ -6,7 +6,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 local instructions in: Tools/PHP FormMail
 */
 
-$my_email = "client@address.com";
+$my_email = "wildflower_cafe@yahoo.com";
 // $my_email = "robert@robertmeans.com";
 /* let visitor fill in the "from" field - leave string below empty */
 $from_email = "";
@@ -62,7 +62,7 @@ $message = $message . PHP_EOL.PHP_EOL."".PHP_EOL."";
 
 $message = stripslashes($message);
 
-$subject = "Message from Rookies.com Website";
+$subject = "Message from EvergreenTapHouse.com Website";
 
 $subject = stripslashes($subject);
 
@@ -95,40 +95,28 @@ mail($my_email,$subject,$message,$headers);
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Rookies - Batting Cages in Evergreen, Colorado</title>
+	<title>Evergreen Tap House</title>
 	<!-- <link rel="icon" type="image/ico" href="_images/favicon.ico"> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">	
+	<link rel="stylesheet" href="styles.css?<?php echo time(); ?>">	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 
 </head>
 <body onload="document.forms[0].name.focus();">
 <div id="wrapper">
 <header>
-	<h1>Rookies</h1>
+	<h1>Evergreen Tap House</h1>
 	<img src="_images/under-construction.png" alt="Under Construction">
 </header>
 
 <section id="success">
 	<h2>Your message was sent successfully!</h2>
-	<p><a href="http://www.rookiesevergreen.com">Back to homepage</a></p>
+	<p><a href="/">Back to homepage</a></p>
 </section>
 
-<footer class="cf">
-	<div id="left">
-		<p>Rookies, LLC</p>
-	</div>
-	<div id="center">
-		<p><i class="fa fa-map-marker"></i> Downtown Evergreen, Colorado</p>
-	</div>
-	<div id="right">
-		<!-- <p><i class="fa fa-phone-square"></i> <a class="tel" tabIndex="-1" href="tel:(303) 555-1234">720.319.8316</a></p> -->
-	</div>
-
-</footer>
+<?php include '_includes/footer.php' ?>
 </div><!-- #wrapper -->
 
-<script type="text/javascript" src="_scripts/scripts.js?<?php echo time(); ?>"></script>
-<script src="http://localhost:35729/livereload.js"></script>	
 </body>
 </html>

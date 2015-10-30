@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ABC Company, Inc.</title>
+	<title>Evergreen Tap House</title>
 	<!-- <link rel="icon" type="image/ico" href="_images/favicon.ico"> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -17,18 +17,17 @@
 </div>
 <div id="wrapper">
 <header>
-	<h1>ABC Company, Inc.</h1>
+	<h1>Evergreen Tap House</h1>
 	<img src="_images/under-construction.png" alt="Under Construction">
 </header>
 <section id="left-side">
 
-<h2>Tag line attention grabber slogan jingle</h2>
+<h2>Evergreen, Colorado Brew Tavern</h2>
 	<ul>
-	<li>Add some basic information about your company here.</li>
-	<li>Services, Grand Opening date, etc.</li>
-	<li>Use this area for whatever information you want to display while your site is being built.</li>
-	<li>You don't have to use bullet points.</li>
-	<li>They do convey information quickly and concisely though.</li>
+	<li>Opening for business late November</li>
+	<li>Food, Beer &amp; Spirits</li>
+	<li>Friendly atmosphere located right above Boone Mountain Sports</li>
+	<li>Come back soon for our full-featured website!</li>
 	</ul>
 
 </section>
@@ -50,7 +49,7 @@
           <textarea name="comments" id="comments" tabindex="30"></textarea>
         </li>
         <li>
-            <input id="send" type="submit" value="Send" tabindex="40" /><input id="clear" type="button" value="Clear" onClick="rUSure()" tabindex="50" />
+            <input id="send" type="submit" value="Send" tabindex="40" />
         </li>
         
     </ul> 

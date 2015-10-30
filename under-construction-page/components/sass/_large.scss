@@ -7,15 +7,19 @@ header {
 header h1 {
 	font-size: 4em;
 	font-weight: bold;
-	color: #005692;
 	padding: 100px 0px 5px 0px;
 	border-bottom: 2px solid #757575;
 }
 h2 {
 	font-size: 1.5em;
-	font-weight: bold;
-	color: #C54A14;
+	font-weight: bold;	
 }
+h2.temp-down {
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid #d0112b;
+      margin-bottom: 1em;
+      color: #C54A14;	
+    }
 #wrapper img {
 	position: absolute;
 	z-index: 3;
@@ -103,8 +107,8 @@ footer {
 	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 60px;
-	background: #eeeeee;
-	color: #1570a6;
+	background: #313131;
+	color: #fff;
 	#left {
 		float: left;
 		text-align: right;
@@ -134,11 +138,13 @@ footer {
 		}
 	}
 	.fa-map-marker {
-		color: #7f0000;
+		// color: #7f0000;
+		color: #fff;
 		padding-right: 5px;
 	}
 	.fa-phone-square {
-		color: #3b3b3b;
+		// color: #3b3b3b;
+		color: #fff;
 		padding-right: 5px;
 	}
 	.copyright {
@@ -146,7 +152,7 @@ footer {
 		position: absolute;
 		bottom: 5px;
 		right: 30px;
-		color: #7a7a7a;
+		color: #e1e1e1;
 	}
 	a {
 		color: inherit;
