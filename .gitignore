@@ -6,3 +6,5 @@ _notes
 node_modules
 .gitattributes
 sftp-config.json
+Thumb.db
+_video
