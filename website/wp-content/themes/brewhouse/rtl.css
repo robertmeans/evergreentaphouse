@@ -1,0 +1,397 @@
+/*
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+blockquote {
+    border-right: 5px solid #444;
+	border-left: none;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+ul,
+ol {
+    margin: 0 3em 1.5em 0;
+}
+
+li > ul,
+li > ol {
+    margin-right: 1.5em;
+	margin-left: auto;
+}
+
+.hr {
+    -moz-border-right-colors: none;
+    -moz-border-left-colors: none;
+    border-left: 0 none;
+	border-right: none;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+
+textarea {
+    padding-right: 3px;
+	padding-left: 0;
+}
+
+/**** contact form *****/
+
+li.contact-name {
+    margin-left: 2%;
+    float: right;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+    float: right;
+}
+
+.main-navigation ul {
+    padding-right: 0;
+    float: left;
+	padding-left: 0;
+}
+
+.main-navigation li {
+    float: right;
+}
+
+.main-navigation ul ul {
+    float: right;
+    right: -999em;
+	left: auto;
+}
+
+.main-navigation ul ul ul {
+    right: -999em;
+	left: auto;
+}
+
+.main-navigation ul li:hover > ul {
+    right: auto;
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul {
+    right: 100%;
+	left: auto;
+}
+
+/* Small menu */
+
+@media screen and (max-width: 600px) {
+
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: right;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: left;
+    text-align: left;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    right: 5px;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignright {
+    float: right;
+    margin-left: 1.5em;
+	margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1.5em;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+
+/* Make sure select elements fit in widgets */
+
+/* Search widget */
+
+/*--- opening hours widget ---*/
+
+.opening-hours-list li span.head {
+    float: right;
+}
+
+.opening-hours-list li span.close,
+.opening-hours-list li span.time {
+    padding-right: 22px;
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+.home-parallax-bg {
+    right: 0;
+    left: 0;
+}
+
+.color-dark, .color-light {
+    float: right;
+}
+
+.beer {
+    float: right;
+}
+
+.footer-block {
+    float: right;
+}
+
+img.page-header {
+    right: 0;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+
+.page-entry-header-bg {
+    right: 0;
+	left: auto;
+}
+
+.underline span {
+    padding: 0 0 0 20px;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* Older / Newer Posts Navigation (always hidden) */
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+
+/* Make sure embeds and iframes fit their containers */
+
+.border--top, .border--bottom {
+    right: 0;
+    left: 0;
+}
+
+.border--left {
+    left: 0;
+	right: auto;
+}
+
+.border--right {
+    right: 0;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+
+.gallery-image {
+    float: right;
+}
+
+/*--------------------------------------------------------------
+13.0 Skeleton
+--------------------------------------------------------------*/
+
+[class*='col-'] {
+    float: right;
+    padding-left: 40px;
+	padding-right: 0;
+}
+
+.grid-pad {
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.push-left {
+    float: left;
+}
+
+/* Content Columns */
+
+/* Layout Columns */
+
+/* Pushing blocks */
+
+.push-2-3, .push-8-12 {
+    margin-right: 66.66%;
+	margin-left: auto;
+}
+
+.push-1-2, .push-6-12 {
+    margin-right: 50%;
+	margin-left: auto;
+}
+
+.push-1-3, .push-4-12 {
+    margin-right: 33.33%;
+	margin-left: auto;
+}
+
+.push-1-4, .push-3-12 {
+    margin-right: 25%;
+	margin-left: auto;
+}
+
+.push-1-5 {
+    margin-right: 20%;
+	margin-left: auto;
+}
+
+.push-1-6, .push-2-12 {
+    margin-right: 16.667%;
+	margin-left: auto;
+}
+
+.push-1-7 {
+    margin-right: 14.28%;
+	margin-left: auto;
+}
+
+.push-1-8 {
+    margin-right: 12.5%;
+	margin-left: auto;
+}
+
+.push-1-9 {
+    margin-right: 11.1%;
+	margin-left: auto;
+}
+
+.push-1-10 {
+    margin-right: 10%;
+	margin-left: auto;
+}
+
+.push-1-11 {
+    margin-right: 9.09%;
+	margin-left: auto;
+}
+
+.push-1-12 {
+    margin-right: 8.33%;
+	margin-left: auto;
+}
+
+@media handheld, only screen and (max-width: 1160px) {
+
+}
+
+@media handheld, only screen and (max-width: 960px) {
+
+}
+
+.grid {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+
+
+@media handheld, only screen and (max-width: 1160px) 
+
+
+@media handheld, only screen and (max-width: 960px) 
+.grid {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+}
+
+@media handheld, only screen and (max-width: 468px) {
+
+}
+
+
+/* Made by the RTL-er.com - http://www.rtl-er.com */
