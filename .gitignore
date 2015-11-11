@@ -1,10 +1,66 @@
-*config*
 *.sass-cache*
-_images-raw
-_admin-components
-_notes
-node_modules
+node_modules/
 .gitattributes
 sftp-config.json
-Thumb.db
+new_client_setup.docx
 _video
+_notes
+Thumbs.db
+
+# ignore everything in the root except the "wp-content" directory.
+/drafts/FFD-WP/*
+!/drafts/FFD-WP/wp-content/
+
+# ignore all files starting with . except .gitignore
+.*
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+# ignore all files that start with ~
+~*
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins" directory
+# "plugins" directory
+# "themes" directory
+wp-content/*
+!/drafts/FFD-WP/wp-content/mu-plugins/
+!/drafts/FFD-WP/wp-content/plugins/
+!/drafts/FFD-WP/wp-content/themes/
+
+# ignore these plugins
+/drafts/FFD-WP/wp-content/plugins/hello.php
+
+# ignore specific themes
+/drafts/FFD-WP/wp-content/themes/twenty*/
