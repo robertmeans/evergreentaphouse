@@ -9,8 +9,8 @@ _notes
 Thumbs.db
 
 # ignore everything in the root except the "wp-content" directory.
-/drafts/FFD-WP/*
-!/drafts/FFD-WP/wp-content/
+/websites/*
+!/website/wp-content/
 
 # ignore all files starting with . except .gitignore
 .*
@@ -56,12 +56,12 @@ Thumbs.db
 # "plugins" directory
 # "themes" directory
 wp-content/*
-!/drafts/FFD-WP/wp-content/mu-plugins/
-!/drafts/FFD-WP/wp-content/plugins/
-!/drafts/FFD-WP/wp-content/themes/
+!/website/wp-content/mu-plugins/
+!/website/wp-content/plugins/
+!/website/wp-content/themes/
 
 # ignore these plugins
-/drafts/FFD-WP/wp-content/plugins/hello.php
+/website/wp-content/plugins/hello.php
 
 # ignore specific themes
-/drafts/FFD-WP/wp-content/themes/twenty*/
+/website/wp-content/themes/twenty*/
