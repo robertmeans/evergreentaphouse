@@ -294,6 +294,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.open-fo-bidness {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: green;
+}
+
 @media screen and (max-width: 1000px) {
   header h1 {
     font-size: 3em;

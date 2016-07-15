@@ -1,0 +1,3 @@
+[12/19/2015 9:42 PM] - STATUS : Submission mail - Result: Sent Mail Ok 
+[12/19/2015 10:42 PM] - FAILURE : Submission mail - Result: Invalid MailChimp API key: 6283ef9bdef6755f8fe686ce53bdf75a
+[12/19/2015 10:42 PM] - FAILURE : Submission mail - Result: Invalid MailChimp List ID: edac89dcacx

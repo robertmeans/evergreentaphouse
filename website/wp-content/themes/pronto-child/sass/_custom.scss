@@ -1,0 +1,191 @@
+body {
+	// stop panning on mobile when 
+	// flick scrolling.
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5,
+.caption h1,
+.bt-menu-classic-catname h4,
+.bt-accordion-itemTitle h3,
+.bt-accordion-itemTitle.closeit h3,
+.bliccaThemes_section_title h2,
+.sidebar-widget h5 {
+	// font-family: 'Open Sans';
+	// font-family: 'Slabo 27px';
+	font-family: 'Architects Daughter';
+
+}
+.hidden {
+	display: none;
+}
+
+.bt-menu-item-s1 {
+	.bt-menu-itemThumb {
+		// this centers text on menu items
+		// after I removed the thumbnails.
+		// if you add thumbnails back you'll
+		// need to remove this element
+		width: 0px;
+	}
+	background: #fff;
+}
+
+div.bt-accordionMenu-item {
+	// menu catagory titles (before expanded)
+	background: rgba(255,255,255,.7);
+}
+h4.bt-accordion-subtitle {
+	font-size: 20px;
+}
+
+body.page-id-814,
+body.page-id-900 {
+	// events page
+	h2 {
+		// font-family: 'Open Sans';
+		// font-family: 'Slabo 27px';
+		font-family: 'Architects Daughter';
+		font-size: 40px;
+	}
+	div.bt_caption_sep {
+	//events page - remove separator img
+	display: none;
+	}
+}
+// events page calendar title
+#bliccaThemes-layout .ajde_evcal_calendar #evcal_head.calendar_header #evcal_cur {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	color: #757575;
+}
+div.bt-accordion-itemContent {
+	background: rgba(255,255,255,.6);
+}
+
+body.page-id-736 {
+	// contact page
+	background: #f6f0d4;
+	div.bt_caption_sep {
+		display: none;
+	}
+	div.col-md-12 > h1 {
+		background: rgba(0,0,0,0.6);
+		border: 1px solid #fff;
+		width: 100%;
+		max-width: 350px;
+		box-sizing: border-box;
+		padding: 20px;
+		margin: 0 auto;
+	}
+}
+body.page-id-663{
+	// menu page
+	div.bt_caption_sep {
+		display: none;
+	}
+	div.col-md-12 > h1 {
+		background: rgba(0,0,0,0.6);
+		border: 1px solid #fff;
+		width: 100%;
+		max-width: 350px;
+		box-sizing: border-box;
+		padding: 20px;
+		margin: 0 auto;
+	}
+}
+
+
+
+body.page-id-647,
+body.page-id-1358 {
+	// menu pages
+	background: url(_images/bar-grain.jpg) center fixed;
+	div.bt_caption_sep {
+		display: none;
+	}
+	div.col-md-12 > h1 {
+		background: rgba(0,0,0,0.6);
+		border: 1px solid #fff;
+		width: 100%;
+		max-width: 400px;
+		box-sizing: border-box;
+		padding: 20px;
+		margin: 0 auto;
+	}
+}
+// events page
+body.page-id-814 {
+	.caption-container {
+		margin-bottom: 0px;
+	}
+	//manage crap showing up at btm of events
+	div.no_animation.services-right.wpb_content_element.animated {
+		display: none;
+	}
+}
+
+
+body.page-id-900 .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+	//homepage
+		margin-bottom: 0px;
+	}
+body.page-id-900 .bliccaThemes_section_title h2:first-child {
+	padding-top: 40px;
+}
+body.page-id-900 div.wpb_column.vc_column_container.vc_col-sm-9 {
+	margin-bottom: 60px;
+}
+
+
+.single-post div.caption-container div.col-md-12,
+.search-results div.caption-container div.col-md-12 {
+	//single post title background
+	background: rgba(0,0,0,0.5);
+	border: 1px solid #fff;
+}
+h3#reply-title.comment-reply-title {
+	padding-top: 30px;
+	padding-left: 20px;
+}
+form#commentform {
+	margin-top: 20px;
+}
+
+.beer-hp-img-height {
+	// images on homepage of upcoming beers
+	height: 200px;
+}
+
+
+.header-bkg {
+	padding: 10px;
+	border: 1px solid #fff;
+	background: rgba(0,0,0,0.6);
+}
+
+//map overlay
+.overlay {
+   background: transparent; 
+   z-index: 10;
+   position: relative; 
+   width: 100%;
+   height: 400px; /* iframe height */
+   top: 400px;  /* iframe height */
+   margin-top: -400px;  /* iframe height */
+}
+
+//phone number at top
+div.topsection-about {
+	font-size: 18px;
+}
+// event sort options
+.evo_sort_btn {
+	display: none;
+}
+@media screen and (max-width: 992px) {
+	.page-id-663 .bt-menu-classic-title, 
+	.page-id-663 .bt-menu-classic-price {
+		width: 100%;
+		padding: 10px 0px;
+	}
+}

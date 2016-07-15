@@ -24,7 +24,7 @@
 
 <h2>Evergreen, Colorado Brew Tavern</h2>
 	<ul>
-	<li>Opening for business late November</li>
+	<li><span class="open-fo-bidness">We're Open!</span></li>
 	<li>Food, Beer &amp; Spirits</li>
 	<li>Friendly atmosphere located right above Boone Mountain Sports</li>
 	<li>Come back soon for our full-featured website!</li>
