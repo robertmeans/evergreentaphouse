@@ -21,6 +21,7 @@ function bliccaThemes_script() {
     wp_register_script( 'imagesload', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array('jquery'), '', true);
     wp_register_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '', true);
     wp_register_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
+    // wp_register_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '', true);
       
     
     wp_enqueue_script('jquery');   
@@ -29,6 +30,7 @@ function bliccaThemes_script() {
     wp_enqueue_script('imagesload');
     wp_enqueue_script('plugins'); 
     wp_enqueue_script('main');
+    // wp_enqueue_script('scripts');
 
     }
 add_action( "wp_enqueue_scripts", "bliccaThemes_script" );

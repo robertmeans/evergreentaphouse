@@ -179,6 +179,81 @@ div.topsection-about {
     padding: 10px 0px;
   }
 }
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(1),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(2),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(3),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(4),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(5),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(9),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(10),
+body.page-id-663 div.bt-menu-classic-category div.bt-menu-classic-items:nth-of-type(11) {
+  display: none;
+}
+
+div#taphunter-attribution {
+  display: none;
+}
+
+#taphunter.th-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  padding-left: 2%;
+}
+
+#taphunter .div-left {
+  width: 100%;
+  clear: both;
+  padding: 0 10px 0 0;
+}
+
+@media (min-width: 700px) {
+  width: 100%;
+  clear: both;
+  padding: 0;
+  #taphunter #taphunter-taps .div-right {
+    float: left;
+  }
+}
+#taphunter #taphunter-taps .div-right {
+  float: left;
+}
+
+#taphunter .category-header {
+  width: 100%;
+  max-width: 100%;
+  float: none;
+  clear: both;
+}
+
+#taphunter h3 {
+  border-bottom: 1px dotted #333;
+  padding: 10px 5px 10px 10px;
+}
+
+#taphunter .heading {
+  color: #A93302;
+}
+
+#taphunter hr {
+  clear: both;
+  width: 100%;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid #9c0a0a;
+}
+
+#menu-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body.page-id-1745 div.menu-list div.menu-list-item:nth-of-type(1) {
+  display: none;
+}
+
 .navbar-nav > li > .dropdown-menu {
   margin-top: 15px;
 }

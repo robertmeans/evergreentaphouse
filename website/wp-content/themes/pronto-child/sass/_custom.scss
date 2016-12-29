@@ -163,7 +163,7 @@ form#commentform {
 	background: rgba(0,0,0,0.6);
 }
 
-//map overlay
+// map overlay
 .overlay {
    background: transparent; 
    z-index: 10;
@@ -174,7 +174,7 @@ form#commentform {
    margin-top: -400px;  /* iframe height */
 }
 
-//phone number at top
+// phone number at top
 div.topsection-about {
 	font-size: 18px;
 }
@@ -189,3 +189,104 @@ div.topsection-about {
 		padding: 10px 0px;
 	}
 }
+
+// remove Beers on Tap from menu
+// 09.28.16 - requested by Bobby Everett
+// body.page-id-663 div.bt-menu-classic-category 
+// EWD
+
+// 1 = on tap
+// 2 = beer
+// 3 = wine
+// 4 = speciality drinks
+// 5 = spirits
+// 6 = salads
+// 7 = lights snacks
+// 8 = ethb signature sandwiches
+// 9 = do it yourself hoagies
+// 10 = deserts
+// 11 = pairings
+
+body.page-id-663 div.bt-menu-classic-category {
+	div.bt-menu-classic-items:nth-of-type(1),
+	div.bt-menu-classic-items:nth-of-type(2),
+	div.bt-menu-classic-items:nth-of-type(3),
+	div.bt-menu-classic-items:nth-of-type(4),
+	div.bt-menu-classic-items:nth-of-type(5),
+	div.bt-menu-classic-items:nth-of-type(9),
+	div.bt-menu-classic-items:nth-of-type(10),
+	div.bt-menu-classic-items:nth-of-type(11) {
+		display: none;
+	}
+
+}
+
+
+
+// EWD Taphunter styles
+// 10.12.16
+div#taphunter-attribution {
+	display: none;
+}
+#taphunter.th-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 80px auto;
+	padding-left: 2%;
+}
+#taphunter .div-left {
+	width: 100%;
+	clear: both;
+	padding: 0 10px 0 0;
+}
+@media (min-width: 700px) {
+	width: 100%;
+	clear: both;
+	padding: 0;
+	#taphunter #taphunter-taps .div-right {
+		float: left;
+	}
+}
+#taphunter #taphunter-taps .div-right {
+	float: left;
+}
+
+#taphunter .category-header {
+	width: 100%;
+	max-width: 100%;
+	float: none;
+	clear: both;
+}
+#taphunter h3 {
+	border-bottom: 1px dotted #333;
+	padding: 10px 5px 10px 10px;
+}
+#taphunter .heading {
+	color: #A93302;
+}
+#taphunter hr {
+	clear: both;
+	width: 100%;
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	border-top: 1px solid #9c0a0a;
+}
+
+// EWD untappd styles
+// 10.20.16
+#menu-container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+// testing 10.25.16
+// this gets rid of the tap list tab only leaving the events tab
+body.page-id-1745 div.menu-list div.menu-list-item:nth-of-type(1) {
+	display: none;
+}
+
+// body.page-id-1745 div.menu-list div.menu-list-item div.events-tab {
+// 	display: block;
+// }
