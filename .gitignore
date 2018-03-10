@@ -7,6 +7,7 @@ new_client_setup.docx
 _video
 _notes
 Thumbs.db
+_dropbox-files
 
 # ignore everything in the root except the "wp-content" directory.
 /websites/*
